@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // SQL query to check if the member with the given email and password exists
-    $sql = "SELECT * FROM members WHERE email = '$email' AND password = '$password'";
+    $sql = "SELECT * FROM members WHERE email = '$email' AND password = "YOUR_OWN_API_KEY"";
     $result = $conn->query($sql);
 
     if ($result->num_rows == 1) {
